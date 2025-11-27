@@ -66,14 +66,16 @@ GDP per capita (NY.GDP.PCAP.CD)
 
 Life expectancy (SP.DYN.LE00.IN)
 
+Population (SP.POP.TOTL)
+
+School_Enrollment (SE.SEC.ENRR)
+
 ### 📈 What You Can Do with This Project
-Compare GDP and life expectancy across countries and regions
+Displays a table with key indicators (GDP_per_Capita, Life_Expectancy, Population, School_Enrollment) for each country and year.
 
-Visualize historical trends with line plots
+Allows the user to select a metric (GDP, Life Expectancy, Population, or School Enrollment) and visualizes its trend over time using a line chart.
 
-Explore correlations and data insights interactively
-
-Extend the analysis with new indicators (e.g., education, health spending)
+Displays scatter plots showing the relationship between GDP per Capita and other indicators (Life Expectancy, Population, School Enrollment).
 
 ### 🧪 Skills Demonstrated
 
@@ -83,20 +85,11 @@ Extend the analysis with new indicators (e.g., education, health spending)
 
 ✅ World Bank API integration using wbgapi
 
-✅ Data Visualization (matplotlib & seaborn)
+✅ Data Visualization (plotly, matplotlib & seaborn)
 
 ✅ Building interactive dashboards with Streamlit
 
 ✅ Project structuring and modular code design
-
-
-### 💡 Ideas for Extension
-
-Add more indicators (e.g., education, CO2 emissions)
-
-Build regional comparisons or economic clusters
-
-Deploy the Streamlit app online (e.g., via Streamlit Cloud or Hugging Face Spaces)
 
 ### 📬 Contact
 
