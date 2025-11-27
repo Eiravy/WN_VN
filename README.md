@@ -12,9 +12,9 @@ Follow these steps to set up and run the project in a clean Conda environment:
 
 ```bash
 
-git clone https://github.com/eiravy/wealth_of_nation_vyngoc
+git clone https://github.com/eiravy/WN_VN
 
-cd wealth_of_nation_vyngoc
+cd WN_VN
 
 ```
 
