@@ -21,61 +21,40 @@ cd WN_VN
 ### 2. Create and Activate a New Conda Environment
 
 ```bash 
-conda create -n wealth_env python=3.13
-conda activate wealth_env
+conda create -n myenv python=3.10.16
+conda activate myenv
 ```
 
-
-### 3. Install Required Libraries
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Run the Analysis Script (Optional)
+### 3. Launch the Streamlit Web App
 
 ```bash
-python main.py
-```
-
-### 5. Launch the Streamlit Web App
-
-```bash
-streamlit run app.py
+streamlit run main.py
 ```
 
 Then open the browser URL shown in your terminal to interact with the dashboard.
 
 ### 🗂️ Project Structure
 
-wealth_of_nations/
+WN_VN/
 
 │
 
-├── README.md              ← Project overview and setup instructions
+├── __init__.py
 
-├── requirements.txt       ← List of required Python packages
+├── main.py            ← Main script for data analysis (optional)
 
-├── main.py                ← Main script for data analysis (optional)
+├── data_loader.py     ← Functions to load World Bank data using wbgapi
 
-├── app.py                 ← Streamlit application (web dashboard)
+├── data_analysis.py   ← Functions for analysis (correlations, trends)
 
-│
-├── src/                   ← Source code folder
+├── visualization.py   ← Functions for charts using matplotlib/seaborn
 
-│   ├── __init__.py
+├── ml_prediction.py   ← Training and testing Linear regression, Random Forest, Decision Tree, K-Means Clustering
 
-│   ├── data_loader.py     ← Functions to load World Bank data using wbgapi
+└── figure/            ← (Optional) Author's photo
 
-│   ├── data_processing.py ← Functions for cleaning and reshaping data
+├── README.md          ← Project overview and setup instructions
 
-│   ├── analysis.py        ← Functions for analysis (correlations, trends)
-
-│   └── visualization.py   ← Functions for charts using matplotlib/seaborn
-
-│
-
-└── data/                  ← (Optional) Folder for downloaded or exported datasets
 
 ### 📊 Data Source
 
