@@ -49,9 +49,12 @@ end_year = st.sidebar.slider("End year", 1980, 2020, 2020)
 economies = wb.economy.DataFrame()
 selected_codes = [code for code,name in zip(economies.index,economies['name']) if name in selected_countries]
 
+
 # Theme selection
-theme_name = st.sidebar.selectbox("Select Theme / Palette",
-                                  ["Light","Dark"])
+theme_options = ["Light", "Dark", "Blues", "Greens", "Reds",
+                 "Cividis", "Inferno", "Magma", "Plasma", "Rainbow", "Turbo"]
+
+theme_name = st.sidebar.selectbox("Select Theme", theme_options)
 # Set colors, palette, colormap
 bg_color, text_color, palette, cmap_for_map = set_theme(theme_name, max(1,len(selected_countries)))
 
