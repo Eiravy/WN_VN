@@ -1,6 +1,6 @@
 # 🌍 Wealth of Nations
 
-Quantitative analysis of global socio-economic indicators: examining **GDP per capita, life expectancy, population, and school enrollment** across nations to reveal developmental trends, correlations, and patterns using World Bank Open Data.
+Quantitative analysis of global socioeconomic indicators: examining **GDP per capita, life expectancy, population, and school enrollment** across nations to reveal developmental trends, correlations, and patterns using World Bank Open Data.
 
 ---
 
@@ -45,9 +45,9 @@ WN_VN/
 
 ├── data_loader.py     ← Functions to load World Bank data using wbgapi
 
-├── data_analysis.py   ← Functions for analysis (correlations, trends)
+├── data_analysis.py   ← Functions for analysis (data table, trends, correlations)
 
-├── visualization.py   ← Functions for charts using matplotlib/seaborn
+├── visualization.py   ← Functions for charts using plotly/matplotlib/seaborn
 
 ├── ml_prediction.py   ← Training and testing Linear regression, Random Forest, Decision Tree, K-Means Clustering
 
@@ -62,9 +62,9 @@ All data is retrieved live from the World Bank Open Data API using the wbgapi Py
 
 Key indicators used:
 
-GDP per capita (NY.GDP.PCAP.CD)
+GDP_per_Capita (NY.GDP.PCAP.CD)
 
-Life expectancy (SP.DYN.LE00.IN)
+Life_Expectancy (SP.DYN.LE00.IN)
 
 Population (SP.POP.TOTL)
 
@@ -101,7 +101,7 @@ Le Hong Vy Ngoc
 
 Master Student, Università degli Studi di Milano Statale
 
-Major: Data Science for Health and Economics
+Major: Data Science for Economics and Health
 
 📧 hongvyngoc.le@studenti.unimi.it
 📧 vyngoc100@gmail.com
