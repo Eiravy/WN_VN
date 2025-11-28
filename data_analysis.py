@@ -19,9 +19,11 @@ def data_analysis(df, theme_name, palette):
         with tab:
             fig_trend=px.line(df,x='Year',y=metric,color='Country',markers=True,
                       title=f"{metric} Trend Over Time",
-                      template='plotly_dark' if theme_name=="Dark" else 'plotly_white')
-            # Show line chart
-            st.plotly_chart(fig_trend,use_container_width=True,height=500)
+                      template='plotly_dark' if theme_name=="Dark" else 'plotly_white')            
+            # set height in layout
+            fig_trend.update_layout(height=500)
+            # Show chart
+            st.plotly_chart(fig_trend, use_container_width=True, config={"responsive": True})
     
     
     st.header("3. Correlations")
