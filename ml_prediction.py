@@ -8,7 +8,7 @@ from sklearn.metrics import mean_absolute_error     # To measure prediction erro
 from sklearn.cluster import KMeans      # Clustering
 
 def machinelearning_clustering(df, selected_countries, end_year):
-    st.header("6. KMeans Clustering")
+    st.header("5. KMeans Clustering")
     # Compute average GDP per Capita per country
     avg_gdp=df.groupby('Country')['GDP_per_Capita'].mean().reset_index()
     # Slider to select number of clusters
@@ -27,7 +27,7 @@ def machinelearning_clustering(df, selected_countries, end_year):
     st.plotly_chart(fig_cluster,use_container_width=True)
 
 
-    st.header("7. Predict Life Expectancy from GDP per Capita")
+    st.header("6. Predict Life Expectancy from GDP per Capita")
     # Define ML methods
     methods={"Linear Regression":LinearRegression(),
              "Decision Tree":DecisionTreeRegressor(),
