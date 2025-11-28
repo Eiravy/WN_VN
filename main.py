@@ -13,7 +13,7 @@ col1, col2 = st.columns([3, 1])  # 3:1 width ratio
 
 with col1:
     # Title and description
-    st.title("Quantitative analysis of global socio-economic indicators: examining GDP per capita, life expectancy, population, and school enrollment across nations to reveal developmental trends, correlations, and patterns using World Bank Open Data.")
+    st.title("Quantitative analysis of global socioeconomic indicators: examining GDP per capita, life expectancy, population, and school enrollment across nations to reveal developmental trends, correlations, and patterns using World Bank Open Data.")
     # Data source info
     st.write("Data source: World Bank Open Data API - wbgapi - https://pypi.org/project/wbgapi/")
 
