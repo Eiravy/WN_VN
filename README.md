@@ -1,6 +1,6 @@
 # 🌍 Wealth of Nations
 
-This project explores the relationship between **GDP per capita** and **life expectancy** across nations using **World Bank Open Data**. It provides both data analysis and an interactive dashboard built with **Streamlit**.
+Quantitative analysis of global socio-economic indicators: examining **GDP per capita, life expectancy, population, and school enrollment** across nations to reveal developmental trends, correlations, and patterns using World Bank Open Data.
 
 ---
 
@@ -76,6 +76,10 @@ Displays a table with key indicators (GDP_per_Capita, Life_Expectancy, Populatio
 Allows the user to select a metric (GDP, Life Expectancy, Population, or School Enrollment) and visualizes its trend over time using a line chart.
 
 Displays scatter plots showing the relationship between GDP per Capita and other indicators (Life Expectancy, Population, School Enrollment).
+
+This experiment changes K in clustering to group countries by GDP, analyzing how cluster assignments and patterns vary with different K values.
+
+This project trains and tests Life Expectancy using Linear Regression, Decision Tree, and Random Forest, evaluating performance with MAE.
 
 ### 🧪 Skills Demonstrated
 
