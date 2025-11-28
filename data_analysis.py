@@ -12,14 +12,16 @@ def data_analysis(df, theme_name, palette):
     
     st.header("2. Trends Over Time")
     # Select metric to plot
-    metric = st.selectbox("Select Metric:", ['GDP_per_Capita','Life_Expectancy','Population','School_Enrollment'])
+    metrics = ['GDP_per_Capita','Life_Expectancy','Population','School_Enrollment']
+    tabs = st.tabs(metrics)
     # Create line chart for selected metric
-    fig_trend=px.line(df,x='Year',y=metric,color='Country',markers=True,
+    for tab, metric in zip(tabs, metrics):
+        with tab:
+            fig_trend=px.line(df,x='Year',y=metric,color='Country',markers=True,
                       title=f"{metric} Trend Over Time",
                       template='plotly_dark' if theme_name=="Dark" else 'plotly_white')
-    
-    # Show line chart
-    st.plotly_chart(fig_trend,use_container_width=True,height=500)
+            # Show line chart
+            st.plotly_chart(fig_trend,use_container_width=True,height=500)
     
     
     st.header("3. Correlations")
