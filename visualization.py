@@ -59,7 +59,8 @@ def data_visualization(df, end_year, bg_color, text_color, palette, cmap_for_map
                         log_x=True,size_max=45,
                         range_x=[df['GDP_per_Capita'].min()*0.9, df['GDP_per_Capita'].max()*1.1],
                         range_y=[df['Life_Expectancy'].min()-5, df['Life_Expectancy'].max()+5],
-                        template='plotly_dark' if theme_name=="Dark" else 'plotly_white')
+                        template='plotly_dark' if theme_name=="Dark" else 'plotly_white',
+                        color_discrete_sequence=palette)
     # set height in layout
     fig_anim.update_layout(height=600)
     # Show chart
