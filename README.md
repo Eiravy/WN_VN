@@ -31,13 +31,15 @@ conda create -n myenv python=3.10.16
 conda activate myenv
 ```
 
-### 3. Launch the Streamlit Web App
+### 3. Launch the Streamlit Web App on the local machine
 
 ```bash
 streamlit run main.py
 ```
 
-Then open the browser URL shown in your terminal to interact with the dashboard.
+### 4. Launch the App in the global URL
+👉 [Click here to open my app](https://wn-eiravy.streamlit.app/)
+
 
 ### 🗂️ Project Structure
 
