@@ -64,8 +64,8 @@ df = data_loader(selected_codes, start_year, end_year)
 # Data Analysis: show tables, trends, correlations
 data_analysis(df, theme_name, palette)
 
-# Data Visualization: animated scatter & choropleth maps
+# Data Visualization: animated scatter
 data_visualization(df, end_year, bg_color, text_color, palette, cmap_for_map)
 
 # Machine Learning & Clustering: KMeans clusters & life expectancy prediction
-machinelearning_clustering(df, selected_countries, end_year)
+machinelearning_clustering(df, selected_countries, end_year, theme_name, palette)
