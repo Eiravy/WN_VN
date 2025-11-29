@@ -6,3 +6,6 @@ streamlit == 1.50.0
 wbgapi == 1.0.12
 seaborn == 0.13.2
 scikit_learn == 1.7.2
+setuptools
+wheel
+distutils-py
