@@ -7,7 +7,7 @@ from sklearn.ensemble import RandomForestRegressor      # ML model
 from sklearn.metrics import mean_absolute_error     # To measure prediction error
 from sklearn.cluster import KMeans      # Clustering
 
-def machinelearning_clustering(df, selected_countries, end_year):
+def machinelearning_clustering(df, selected_countries, end_year, theme_name, palette):
     st.header("5. KMeans Clustering")
     # Compute average GDP per Capita per country
     avg_gdp=df.groupby('Country')['GDP_per_Capita'].mean().reset_index()
@@ -23,7 +23,8 @@ def machinelearning_clustering(df, selected_countries, end_year):
     # Bar chart of countries colored by cluster
     fig_cluster=px.bar(avg_gdp.sort_values('GDP_per_Capita'),x='Country',y='GDP_per_Capita',
                        color='Cluster_Label',title="Countries Clustered by Average GDP per Capita",
-                       template='plotly_white',color_discrete_sequence=px.colors.qualitative.Plotly)
+                       template='plotly_dark' if theme_name=="Dark" else 'plotly_white',
+                       color_discrete_sequence=palette)
     st.plotly_chart(fig_cluster,use_container_width=True)
 
 
