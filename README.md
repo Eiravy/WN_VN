@@ -8,9 +8,12 @@ Quantitative analysis of global socioeconomic indicators: examining **GDP per ca
 
 Follow these steps to set up and run the project in a clean Conda environment:
 
-### 0. pip install requirements
+### 0. Required packages
+```bash
 
+pip install -r requirements
 
+```
 ### 1. Clone the Repository
 
 ```bash
@@ -41,6 +44,8 @@ Then open the browser URL shown in your terminal to interact with the dashboard.
 WN_VN/
 
 │
+
+├── requirements.txt   ← Installing package requirements
 
 ├── __init__.py
 
