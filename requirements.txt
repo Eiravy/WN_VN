@@ -1,3 +1,6 @@
+setuptools
+wheel
+distutils
 matplotlib == 3.7.2
 numpy == 1.24.3
 pandas == 2.0.3
@@ -6,7 +9,4 @@ streamlit == 1.50.0
 wbgapi == 1.0.12
 seaborn == 0.13.2
 scikit_learn == 1.7.2
-setuptools
-wheel
-distutils
 
