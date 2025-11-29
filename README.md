@@ -8,6 +8,9 @@ Quantitative analysis of global socioeconomic indicators: examining **GDP per ca
 
 Follow these steps to set up and run the project in a clean Conda environment:
 
+### 0. pip install requirements
+
+
 ### 1. Clone the Repository
 
 ```bash
