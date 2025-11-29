@@ -19,7 +19,8 @@ def data_analysis(df, theme_name, palette):
         with tab:
             fig_trend=px.line(df,x='Year',y=metric,color='Country',markers=True,
                       title=f"{metric} Trend Over Time",
-                      template='plotly_dark' if theme_name=="Dark" else 'plotly_white')            
+                      template='plotly_dark' if theme_name=="Dark" else 'plotly_white',
+                      color_discrete_sequence=palette)            
             # set height in layout
             fig_trend.update_layout(height=500)
             # Show chart
