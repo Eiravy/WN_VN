@@ -1,4 +1,5 @@
 import streamlit as st  # Streamlit for web app
+import streamlit.components.v1 as components   # Added for visitor counter
 import wbgapi as wb     # World Bank API
 from data_loader import data_loader     # Load World Bank data
 from data_analysis import data_analysis     # Analysis functions
@@ -69,3 +70,14 @@ data_visualization(df, end_year, bg_color, text_color, palette, cmap_for_map)
 
 # Machine Learning & Clustering: KMeans clusters & life expectancy prediction
 machinelearning_clustering(df, selected_countries, end_year, theme_name, palette)
+
+# ----- Visitor Counter (ClustrMaps) -----t
+html_code = """
+<div style='text-align:center; padding-top:40px;'>
+<a href="https://clustrmaps.com/site/1c8mk" title="ClustrMaps">
+  <img src="//www.clustrmaps.com/map_v2.png?d=4RLKHlP0CVDKaKCU8Bloy8AD7zo4dmVcxvfQ5mmtaj0&cl=ffffff" />
+</a>
+</div>
+"""
+
+components.html(html_code, height=200)
